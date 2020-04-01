@@ -7,12 +7,13 @@ Then one can use the java project to run the kafka producer / consumer .
 <p>
 
 <h2>Kubernetes scripts<h2>
-```bash
-kubectl create -f kube-config/zookeeper.yml
-kubectl create -f kube-config/kafka-service.yml
-kubectl create -f kube-config/kafka-broker.yml
+<code>
+kubectl create -f kube-config/zookeeper.yml<br>
+kubectl create -f kube-config/kafka-service.yml<br>
+kubectl create -f kube-config/kafka-broker.yml<br>
 
-kubectl port-forward <kafka-broker-pod-name> 9092
+kubectl port-forward <kafka-broker-pod-name> 9092<br>
+</code>
 
 <h2>Kafka Producer Consumer</h2>
 <h3>kafkacat: Linux based producer consumer</h3>
